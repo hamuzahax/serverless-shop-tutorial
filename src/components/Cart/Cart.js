@@ -6,7 +6,7 @@ export default function Cart({ itemsInCart, totalCost }) {
   return (
     <div className="Cart">
       <h2 className="Cart-title">Your shopping cart</h2>
-      {itemsInCart.length ? (
+      {itemsInCart.length > 0 ? (
         <div>
           {itemsInCart.map(item => (
             <CartItem

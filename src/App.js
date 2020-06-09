@@ -7,6 +7,7 @@ import CheckoutForm from './components/CheckoutForm/CheckoutForm';
 import logo from './logo.svg';
 import './App.css';
 
+
 export default function App() {
   const [itemsInCart, setItemsInCart] = useState([]);
 
@@ -37,7 +38,7 @@ export default function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1 className="App-header-text">Dreamcast Shop</h1>
+        <h1 className="App-header-text">Green Grocer</h1>
       </header>
       <main className="App-shop">
         <div className="App-products">
@@ -52,7 +53,7 @@ export default function App() {
         </div>
         <Cart itemsInCart={itemsInCart} totalCost={totalCost} />
         {itemsInCart.length > 0 && (
-          <StripeProvider apiKey={process.env.REACT_APP_STRIPE_PUBLIC_KEY}>
+          <StripeProvider apiKey="pk_test_hP6viEqQ3X9X6kzZ9S2wwIrn00iJXevrAO">
             <Elements>
               <CheckoutForm totalCost={totalCost} />
             </Elements>

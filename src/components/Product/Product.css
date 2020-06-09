@@ -11,6 +11,13 @@
   }
 }
 
+.Product img{
+  
+  height: 200px;
+  width: 200px;
+  align-content: center;
+}
+
 .Product-title {
   font-size: 16px;
 }
@@ -30,7 +37,7 @@
   font-weight: 600;
   line-height: 1;
   text-align: center;
-  background-color: #61dafb;
+  background-color: #ff7300;
   color: #fff;
   cursor: pointer;
   transition-property: background-color, color;
@@ -41,5 +48,7 @@
 
 .Product-buy-button:hover,
 .Product-buy-button:focus {
-  background-color: #47b8d7;
+  background-color: #42b302;
 }
+
+
